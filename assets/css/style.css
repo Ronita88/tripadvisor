@@ -1,0 +1,88 @@
+/* general rules */
+
+h1 {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Trip Sans", "sans-serif";
+}
+
+/* délimite les zones de navigation*/
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  /* background-color: aqua; */
+  border: solid 2px black;
+}
+
+/* HEADER */
+
+/* align items ajuste le logo dans le header */
+/* display flex centre sur l'axe X */
+header {
+  height: 60px;
+  /* border: solid black 1px; */
+  display: flex;
+  align-items: center;
+}
+
+/* margin right met une marge entre l'image du logo et la loupe */
+header img {
+  height: 42px;
+  margin-right: 30px;
+}
+
+/* ce header met en ligne tous les éléments du header */
+/* le justify content met une séparation entre la div direct du header */
+header > div {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid 2px blue; */
+}
+
+/* left header met le logo, le search de la section en ligne */
+.left-header {
+  display: flex;
+  align-items: center;
+  border: 2px darkblue solid;
+}
+
+/* le display extend les elements recherche */
+/* align items reduit la barre en son centre */
+/* le padding sépare le logo de l'icone */
+.left-header > div {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 42px;
+  padding: 0 10px;
+  /* background: white; */
+  /* border: solid blue 2px; */
+}
+
+.right-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 460px;
+  border: red 3px solid;
+}
+
+.right-header button {
+  width: 150px;
+  height: 42px;
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+}
+/*  la div segmente chaque partie
+dans laquelle on va trouver des sections */
+
+/* <!-- je mets en place un container qui sert de zone travail --> */
+
+/* <!-- Dans css:
+1/ je détermine la taille du header
+2/ je détermine la hauteur des images
+3 / découpe le header en 2 sections --> */
