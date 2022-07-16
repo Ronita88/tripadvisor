@@ -1,8 +1,10 @@
 /* general rules */
 
 h1 {
+  font-family: "Trip Sans Med";
   font-size: 54px;
-  font-weight: 700;
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 body {
@@ -14,7 +16,7 @@ body {
   width: 1140px;
   margin: 0 auto;
   /* background-color: aqua; */
-  border: solid 2px black;
+  /* border: solid 2px black; */
 }
 
 /* HEADER */
@@ -46,7 +48,7 @@ header > div {
 .left-header {
   display: flex;
   align-items: center;
-  border: 2px darkblue solid;
+  /* border: 2px darkblue solid; */
 }
 
 /* le display extend les elements recherche */
@@ -60,6 +62,10 @@ header > div {
   padding: 0 10px;
   /* background: white; */
   /* border: solid blue 2px; */
+}
+
+h1 span {
+  color: #fe5d5d;
 }
 
 .right-header {
@@ -77,12 +83,193 @@ header > div {
   color: white;
   background-color: black;
 }
-/*  la div segmente chaque partie
-dans laquelle on va trouver des sections */
 
-/* <!-- je mets en place un container qui sert de zone travail --> */
+nav {
+  display: flex;
+  /* border: solid 2px greenyellow; */
+}
 
-/* <!-- Dans css:
-1/ je détermine la taille du header
-2/ je détermine la hauteur des images
-3 / découpe le header en 2 sections --> */
+.cards > div:hover {
+  color: white;
+  background-color: black;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 68px;
+  border: solid rgb(43, 226, 147) 2px;
+}
+
+.cards > div {
+  border: solid black 1px;
+  /* width: 176px; */
+  width: calc(100% / 6);
+  height: 68px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cards > div:not(:last-child) {
+  margin-right: 15px;
+  /* background-color: blue; */
+}
+
+.photo-top {
+  margin: 20px 0;
+  width: 100%;
+  height: 432px;
+  display: flex;
+  /* border: solid 2px red; */
+  box-sizing: border-box;
+}
+
+.photo-left {
+  /* width: calc(60% -1px); */
+  flex: 1;
+  margin-right: 2px;
+  /* border: solid 5px blue; */
+}
+
+.photo-left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.photo-right {
+  height: 100%;
+  width: 483px;
+  /* border: solid 5px burlywood; */
+  box-sizing: border-box;
+}
+
+.photo-right > div {
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+}
+
+.photo-right > div:first-child {
+  margin-bottom: 2px;
+}
+
+.photo-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.images-subtitle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+ul {
+  display: flex;
+}
+li {
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bolder;
+  margin: 32px 0;
+}
+
+.description {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 570px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  border: 2px blueviolet solid;
+  box-sizing: border-box;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+#carousel {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  border: #fe5d5d solid 2px;
+  box-sizing: border-box;
+}
+
+.carousel-left {
+  width: calc(100% / 4);
+  border: solid 2px blue;
+}
+
+.descriptif {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  border: solid 2px greenyellow;
+  margin: 30px 0 20px 0;
+}
+
+#carousel button {
+  border: none;
+  background-color: white;
+  font-family: inherit;
+}
+
+.caroussel-right {
+  width: calc((100% / 4) * 3);
+  border: solid 2px orange;
+  box-sizing: border-box;
+}
+
+.photo-blocks {
+  height: 100%;
+  width: calc(100 / 3);
+  border: solid 2px yellow;
+}
+img {
+  width: 270px;
+  height: 202px;
+}
+
+.circle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circles-picto {
+  color: green;
+}
