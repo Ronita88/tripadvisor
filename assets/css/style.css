@@ -205,6 +205,7 @@ h3 {
 
 h4 {
   font-size: 18px;
+  margin: 10px 0 5px 0;
 }
 
 h5 {
@@ -221,6 +222,7 @@ h6 {
   height: 300px;
   border: #fe5d5d solid 2px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .carousel-left {
@@ -245,13 +247,24 @@ h6 {
   width: calc((100% / 4) * 3);
   border: solid 2px orange;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  overflow-x: scroll;
 }
 
-.photo-blocks {
+.caroussel-right article > div:first-child {
   height: 100%;
-  width: calc(100 / 3);
+  width: calc((100 / 3) * 2);
   border: solid 2px yellow;
+  position: relative;
+  box-sizing: border-box;
 }
+
+.caroussel-right article:not(:last-child) {
+  margin-right: calc(25px / 2);
+}
+
 img {
   width: 270px;
   height: 202px;
